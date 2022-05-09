@@ -5,10 +5,10 @@ from models.Stock import Stock
 
 def get_data_from_csv(file) -> list:
     """
-    function read csv file and get data to create object
+    Function read csv file and get data to create object
 
     :param file:
-    :return: list_actions
+    :return: list_stocks
     """
 
     # with open(file, newline='\n'):

@@ -1,16 +1,11 @@
-from utils.get_combinations_stocks import get_combinations_stocks
-from utils.get_data_from_csv import get_data_from_csv
-from utils.get_stocks_cost import get_stocks_cost
+from bruteforce import brute_force
 
-fichier = open("./csv/action-test5.csv")
+
+csv_file = open("./csv/action-test5.csv")
 
 
 def run():
-    stocks = get_data_from_csv(fichier)
-    combinations_actions = get_combinations_stocks(stocks)
-
-    for combination in combinations_actions:
-        get_stocks_cost(combination)
+    print(brute_force(csv_file))
 
 
 if __name__ == "__main__":
