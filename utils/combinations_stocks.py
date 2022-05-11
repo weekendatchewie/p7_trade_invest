@@ -68,11 +68,11 @@ def get_best_combination_stocks(list_stocks: list) -> dict:
     list_combinations_under_max_expense = []
 
     for combination in list_stocks:
-        cost_to_compare = combination["total coût d'achat des actions"]
+        cost_to_compare = combination["Total coût d'achat des actions"]
         if cost_to_compare <= MAX_EXPENSE:
             list_combinations_under_max_expense.append(combination)
 
-    sorted_combinations = sorted(list_combinations_under_max_expense, key=lambda item: item["total bénéfice"],
+    sorted_combinations = sorted(list_combinations_under_max_expense, key=lambda item: item["Total bénéfice"],
                                  reverse=True)
 
     best_combination = sorted_combinations[0]

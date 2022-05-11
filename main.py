@@ -1,19 +1,12 @@
 from algo_dynamic import algo_dynamic
 from bruteforce import brute_force
 
-"""
-Le même fichier est appelé deux fois dans deux variables différentes car sinon une erreur de type 
-"IndexError: list index out of range" se déclenche
-"""
-csv_file1 = open("./csv/action-test5.csv")
-csv_file2 = open("./csv/action-test5.csv")
-
 
 def run():
 
     choices = {
-        "1": algo_dynamic(csv_file1),
-        "2": brute_force(csv_file1),
+        "1": algo_dynamic(),
+        "2": brute_force(),
     }
 
     while True:

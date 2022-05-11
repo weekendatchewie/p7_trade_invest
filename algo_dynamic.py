@@ -2,7 +2,10 @@ from utils.data_usefull import MAX_EXPENSE
 from utils.get_data_from_csv import get_data_from_csv
 
 
-def algo_dynamic(file) -> dict:
+csv_file = open("./csv/action-test5.csv")
+
+
+def algo_dynamic(file=csv_file) -> dict:
     """
     On créé une matrice, une sorte de tableau comportant autant de ligne que d'élément et de colonne que de capacité.
     Chaque élément sera comparé afin de trouver le résultat le plus optimal
